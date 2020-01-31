@@ -1,4 +1,5 @@
 .mapa{
+    box-sizing: border-box;
     background-color: darkmagenta;
     display: flex;
     align-items: center;
@@ -11,6 +12,7 @@
 
 
 .footer{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;

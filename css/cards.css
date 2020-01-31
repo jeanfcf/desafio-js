@@ -1,4 +1,5 @@
 .blococards{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -7,6 +8,7 @@
     height: 100vh;
 }
 .cardsmid{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +19,7 @@
 }
 
 .cardsleft{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
