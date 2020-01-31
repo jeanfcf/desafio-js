@@ -1,5 +1,33 @@
 
+$(document).ready(function(){
+  
+          var urlStr = "https://api.punkapi.com/v2/beers/"+getRandom(200);
+       
+          $.ajax({
+              url : urlStr,
+              type : "get",
+              dataType : "json",
+              success : function(data){
+                  console.log(data);
+                  console.log(
+                    data[0].name)
+                  $("#a").text(data[0].name);
+                  $("#b").text(data[0].first_brewed);
+                  $("#c").text(data[0].description);
+                  $("#d").text(data[0].ph);
+              },
+              error : function(erro){
+                  console.log(erro);
+                  console.log("errooo");
+              }
+          });
+  });
 
+
+
+function getRandom(max) {
+  return Math.floor(Math.random() * max + 1)
+}
 
 window.onload = function(){
   Swal.fire('Cadastre-se para mais notificacoes')
