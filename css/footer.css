@@ -1,6 +1,9 @@
 .mapa{
+    background-color: rgba(221, 221, 212, 0.904);
+    display: flex;
+    flex-direction: column-reverse;
     box-sizing: border-box;
-    background-color: darkmagenta;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,9 +11,9 @@
     height: 70vh;
 }
 
-
-
-
+.mapa h1{
+    padding-top: 8%;
+}
 .footer{
     box-sizing: border-box;
     display: flex;
@@ -21,3 +24,4 @@
     height: 30vh;
 
 }
+
