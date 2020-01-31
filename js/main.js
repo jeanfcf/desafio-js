@@ -1,5 +1,9 @@
 
 
+
+window.onload = function(){
+  Swal.fire('Cadastre-se para mais notificacoes')
+}
 function cadastro(){
     Swal.mixin({
         input: 'text',
@@ -9,7 +13,7 @@ function cadastro(){
         cancelButtonText: 'Cancelar'
       }).queue([
         {
-          title: 'Cadastre-se para receber mais informacoes',
+          title: 'Cadastre-se',
           text: 'Insira seu nome:'
         },
         'Agora insira seu e-mail:',
