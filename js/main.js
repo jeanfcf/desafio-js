@@ -22,9 +22,9 @@ $(document).ready(function(){
 });
 
 
-window.onload = function(){
+/*window.onload = function(){
   Swal.fire('Cadastre-se para mais notificacoes')
-}
+}*/
 function cadastro(){
     Swal.mixin({
         input: 'text',
