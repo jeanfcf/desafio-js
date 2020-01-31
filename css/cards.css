@@ -15,7 +15,6 @@
     background-color:darkgreen;
     width: 100%;
     height: 100%;
-    
 }
 
 .cardsleft{
@@ -39,17 +38,31 @@
     height: 100%;
 }
 .cards{
+    display: flex;
     box-sizing: border-box;
     border-style: groove;
     border-width: 1px;
     box-sizing: border-box;
-    padding: 5%;
     font-size: 10px;
     text-align: center;
+    width: 90%;
+    height: 40%;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+    background-color: brown;
+    width: 70%;
+    height: 100%;
+}
+
+.cerveja{
+    width: 30%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 90%;
-    height: 40%;
-    
 }
