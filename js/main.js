@@ -1,5 +1,5 @@
 
-
+/*
 function cadastro(){
     Swal.mixin({
         input: 'text',
@@ -25,5 +25,5 @@ function cadastro(){
       })
 }
 
-
+*/
 
