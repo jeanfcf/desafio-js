@@ -1,0 +1,14 @@
+.blococards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: coral;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cards{
+    background-color: crimson;
+    width: 18%;
+    height: 20%;
+}
