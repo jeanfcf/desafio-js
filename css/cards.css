@@ -13,6 +13,7 @@
     background-color:darkgreen;
     width: 100%;
     height: 100%;
+    
 }
 
 .cardsleft{
@@ -34,8 +35,14 @@
     height: 100%;
 }
 .cards{
+    border-style: groove;
+    border-width: 1px;
+    box-sizing: border-box;
+    padding: 5%;
+    font-size: 10px;
     text-align: center;
-    background-color: crimson;
+
     width: 90%;
     height: 40%;
+    
 }

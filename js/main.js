@@ -1,9 +1,11 @@
 
 $(document).ready(function(){
   
-          var urlStr = "https://api.punkapi.com/v2/beers/"+getRandom(200);
-       
+          var urlStr = "https://api.punkapi.com/v2/beers/random";
+
+          
           $.ajax({
+              
               url : urlStr,
               type : "get",
               dataType : "json",
@@ -11,23 +13,123 @@ $(document).ready(function(){
                   console.log(data);
                   console.log(
                     data[0].name)
-                  $("#a").text(data[0].name);
-                  $("#b").text(data[0].first_brewed);
-                  $("#c").text(data[0].description);
-                  $("#d").text(data[0].ph);
+                  $("#titulo1").text(data[0].name);
+                  $("#fabricacao1").text(data[0].first_brewed);
+                  $("#slogan1").text(data[0].description);
+                  $("#alcool1").text(data[0].ph);
+                  $("#card1").css({
+                    'background-image':'url('+data[0].image_url + ')',
+                    'background-size': 'contain',
+                    'background-repeat': 'no-repeat',
+                    'background-position': 'center'
+                  });
               },
               error : function(erro){
                   console.log(erro);
                   console.log("errooo");
               }
           });
+          $.ajax({
+            url : urlStr,
+            type : "get",
+            dataType : "json",
+            success : function(data){
+                console.log(data);
+                console.log(
+                  data[0].name)
+                $("#titulo2").text(data[0].name);
+                $("#fabricacao2").text(data[0].first_brewed);
+                $("#slogan2").text(data[0].description);
+                $("#alcool2").text(data[0].ph);
+                $("#card2").css({
+                  'background-image':'url('+data[0].image_url + ')',
+                  'background-size': 'contain',
+                  'background-repeat': 'no-repeat',
+                  'background-position': 'center'
+                });
+            },
+            error : function(erro){
+                console.log(erro);
+                console.log("errooo");
+            }
+        });
+        $.ajax({
+          url : urlStr,
+          type : "get",
+          dataType : "json",
+          success : function(data){
+              console.log(data);
+              console.log(
+                data[0].name)
+              $("#titulo3").text(data[0].name);
+              $("#fabricacao3").text(data[0].first_brewed);
+              $("#slogan3").text(data[0].description);
+              $("#alcool3").text(data[0].ph);
+              $("#card3").css({
+                'background-image':'url('+data[0].image_url + ')',
+                'background-size': 'contain',
+                'background-repeat': 'no-repeat',
+                'background-position': 'center'
+              });
+          },
+          error : function(erro){
+              console.log(erro);
+              console.log("errooo");
+          }
+      });
+      $.ajax({
+        url : urlStr,
+        type : "get",
+        dataType : "json",
+        success : function(data){
+            console.log(data);
+            console.log(
+              data[0].name)
+            $("#titulo4").text(data[0].name);
+            $("#fabricacao4").text(data[0].first_brewed);
+            $("#slogan4").text(data[0].description);
+            $("#alcool4").text(data[0].ph);
+            $("#card4").css({
+              'background-image':'url('+data[0].image_url + ')',
+              'background-size': 'contain',
+              'background-repeat': 'no-repeat',
+              'background-position': 'center'
+            });
+        },
+        error : function(erro){
+            console.log(erro);
+            console.log("errooo");
+        }
+    });
+    $.ajax({
+      url : urlStr,
+      type : "get",
+      dataType : "json",
+      success : function(data){
+          console.log(data);
+          console.log(
+            data[0].name)
+          $("#titulo5").text(data[0].name);
+          $("#fabricacao5").text(data[0].first_brewed);
+          $("#slogan5").text(data[0].description);
+          $("#alcool5").text(data[0].ph);
+          $("#card5").css({
+            'background-image':'url('+data[0].image_url + ')',
+            'background-size': 'contain',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center'
+          });
+      },
+      error : function(erro){
+          console.log(erro);
+          console.log("errooo");
+      }
   });
 
 
+  });
 
-function getRandom(max) {
-  return Math.floor(Math.random() * max + 1)
-}
+
 
 window.onload = function(){
   Swal.fire('Cadastre-se para mais notificacoes')
