@@ -1,0 +1,19 @@
+@media screen and (max-width:812px){
+
+    .mapa{
+        height: 70vh;
+    }
+    .mapa h1{
+        font-size: 20px;
+       
+    }
+    
+    .footer{
+        height: 30vh;
+    }
+    #cervejaria{
+        font-size: small;
+    }
+
+}
+    

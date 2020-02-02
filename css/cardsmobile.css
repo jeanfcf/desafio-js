@@ -1,3 +1,12 @@
-@media screen and (max-width:600px){
+@media screen and (max-width:812px){
+
+.blococards{
+    flex-direction: column;
+}
+
+.cards{
+    width: 80vw;
+    margin: 20px;
+}
 
 }
