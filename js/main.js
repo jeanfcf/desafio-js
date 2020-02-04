@@ -9,9 +9,9 @@ $(document).ready(function(){
       success : function(data){
         console.log(data);
         $("#titulo"+index).text(data[0].name);
-        $("#fabricacao"+index).text(data[0].first_brewed);
+        $("#fabricacao"+index).text("Fabricação: " + data[0].first_brewed);
         $("#slogan"+index).text(data[0].tagline);
-        $("#alcool"+index).text(data[0].abv);
+        $("#alcool"+index).text(data[0].abv+"% de álcool");
         $("#cerveja"+index).css({'background-image':'url('+data[0].image_url + ')',});
       },
       error : function(erro){
