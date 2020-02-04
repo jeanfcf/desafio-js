@@ -11,7 +11,7 @@ $(document).ready(function(){
         $("#titulo"+index).text(data[0].name);
         $("#fabricacao"+index).text(data[0].first_brewed);
         $("#slogan"+index).text(data[0].tagline);
-        $("#alcool"+index).text(data[0].ph);
+        $("#alcool"+index).text(data[0].abv);
         $("#cerveja"+index).css({'background-image':'url('+data[0].image_url + ')',});
       },
       error : function(erro){
